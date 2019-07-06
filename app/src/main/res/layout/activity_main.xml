@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity">
+
+
+    <android.support.v7.widget.GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/darker_gray"
+        app:columnCount="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348"
+        app:rowCount="3">
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:onClick="imageViewTapped"
+            android:tag="0" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:onClick="imageViewTapped"
+            android:tag="1" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:onClick="imageViewTapped"
+            android:tag="2" />
+
+        <ImageView
+            android:id="@+id/image4"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:onClick="imageViewTapped"
+            android:tag="3" />
+
+        <ImageView
+            android:id="@+id/image5"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:onClick="imageViewTapped"
+            android:tag="4" />
+
+        <ImageView
+            android:id="@+id/image6"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:onClick="imageViewTapped"
+            android:tag="5" />
+
+        <ImageView
+            android:id="@+id/image7"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:onClick="imageViewTapped"
+            android:tag="6" />
+
+        <ImageView
+            android:id="@+id/image8"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:onClick="imageViewTapped"
+            android:tag="7" />
+
+        <ImageView
+            android:id="@+id/image9"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="@android:color/black"
+            android:onClick="imageViewTapped"
+            android:tag="8" />
+    </android.support.v7.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="52dp"
+        android:background="@android:color/black"
+        android:text="Tic Toc Toe"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonReset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="36dp"
+        android:text="Reset Game"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridlayout" />
+
+
+</android.support.constraint.ConstraintLayout>
